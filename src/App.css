@@ -1,0 +1,417 @@
+.App {
+  display: grid;
+  grid-template-columns: 97% 3%;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-BodyWeb{
+  background-color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.App-BodyWebContainerMenu{
+  display:grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
+  width:85%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  float: right;
+  text-align: left;
+  background-color: white;
+  position:fixed;
+  z-index: 1;
+}
+.App-BodyWebContainerMenuMovil{
+  display:none;
+  width:85%;
+  margin-right: 5%;
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  float: left;
+  text-align: left;
+  background-color: white;
+  position:fixed;
+  z-index: 1;
+}
+.App-BodyWebContainerMenuMovilItemNone{
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+.App-BodyWebContainerMenuMovilItemBlock{
+  display:block;
+  position:absolute;
+  min-width:140px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border:solid 1px;
+  border-color: rgb(207, 207, 207);
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+}
+.App-BodyWebContainerMenuButton{
+  cursor: pointer;
+  background-color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  font-size:0.55cm;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: black;
+
+}
+.App-BodyWebContainerMenuButton:hover{
+  background-color:silver;
+  color: white;
+}
+.App-BodyWebContainerMenuMovilButton{
+  cursor: pointer;
+  background-color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  font-size:0.53cm;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: black;
+  padding: 2%;
+}
+.App-BodyWebContainerMenuMovilButton:hover{
+  background-color:silver;
+  color: white;
+}
+.App-BodyWebContainerMenuHr{
+  width:70%;
+  margin-right: 5%;
+  margin-top: 1%;
+  float: right;
+  color: rgb(207, 203, 203);;
+  background-color: rgb(207, 203, 203);
+}
+.App-RightSideBar{
+  padding-top: 5%;
+  padding-right: 1%;
+  width: 100%;
+  height: 100%;
+  background-color: #86a931;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+  position: fixed;
+  right:0%
+}
+.App-BodyWebContainerContent{
+  width:100%;
+  height: 100%;  
+}
+
+.App-BodyWebContainerFooter{
+  width: 95%;
+  height: 120px;
+  padding-top: 1%;
+  padding-left: 2%;
+  background-color: rgb(219, 213, 213);
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  justify-items: flex-start;
+  border-top:rgb(195, 188, 188) solid 1px;
+  position: fixed;
+  bottom:0%  
+}
+.App-BodyWebContainerFooterDatos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.App-BodyWebContainerFooterDatosContacto{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6% 44% 6% 44%;
+  justify-items: flex-start;
+}
+
+.App-BodyWebContainerFooterCorp{
+  background-color: #86a931;
+  padding: 2%;
+  font-size: 0.45cm;
+  color: white;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  justify-content: center;
+  justify-items: center;
+  align-content: flex-end;
+  align-items: flex-end;  
+}
+
+.App-BodyWebContainerFooterChat{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App-BodyWebContainerFooterChatWindowsClose
+{
+  display: none;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpen
+{
+  height: 300px;
+  width: 25%;
+  display: flex;
+  bottom: 9%;
+  left: 72%;
+  position: fixed;
+  z-index: 6;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenContent{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #ca6029;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenTimeLine{
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  height: 70%;
+  margin-bottom: 2%;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.App-BodyWebContainerFooterChatWindowsOpenMessageBox{
+  display: flex;
+  width: 96%;
+  flex-direction: row;
+  justify-items: flex-start;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenMessageBoxText{
+  width: 91%;
+  height: 40px;
+  overflow-x: auto;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenMessageBoxBtn{
+  
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenMessageSendMe{
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #DCF8C6;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.App-BodyWebContainerFooterChatWindowsOpenMessageReceiveMe{
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; /* Ajusta el ancho máximo según tus preferencias */
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f3dda7;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+  /*min-width:10%;
+  max-width: 95%;
+  height: 30px;
+  background-color: #6b8f10;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin-top: 1%;*/
+
+
+
+@media (max-width: 1360px){
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .App-RightSideBar
+  {
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+  }
+
+  .App-BodyWebContainerFooter{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    z-index: 3;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .App-BodyWebContainerMenu{
+    top:6%;
+  }
+  .App-BodyWebContainerContent{
+    padding-top: 15%;
+  }
+  .App-BodyWebContainerMenu{
+    display: none;
+  }
+  .App-BodyWebContainerMenuMovil{
+    top:3%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+/* Animaciones del body */
+@keyframes App-BodyWebContainerAnimation {
+  50%   {opacity: 0.0;}
+  100%  {opacity: 0.5;}
+}
+.cardprincipalbody{
+  float: right;
+  margin-top: 10%;
+  margin-right: 7%;
+  background-color: #94311c;
+  border: none;
+  width: 85%;
+  height: 400px;
+  opacity: 0.5;
+  animation-name: App-BodyWebContainerAnimation;
+  animation-duration: 2s;
+}
+.cardsecundarybody{
+  float: right;
+  margin-top: 3%;
+  margin-right: 7%;
+  background-color: #ca6029;
+  border: none;
+  width: 85%;
+  height: 400px;
+  opacity: 0.5;
+  animation-name: App-BodyWebContainerAnimation;
+  animation-duration: 2s;
+}
+.cardterciarybody{
+  float: right;
+  margin-top: 3%;
+  margin-right: 7%;
+  background-color: #e9d917;
+  border: none;
+  width: 85%;
+  height: 800px;
+  opacity: 0.5;
+  animation-name: App-BodyWebContainerAnimation;
+  animation-duration: 2s;
+}
+/*Standar Html Object*/
+ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos sin utilizar
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
